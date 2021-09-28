@@ -33,9 +33,9 @@ policy_templates:
         title: Collect application metrics
         description: Collecting repository and traffic metrics from IPFS node
         vars:
-          - name: url
+          - name: hosts
             type: text
-            title: URL
+            title: Hosts
             description: Base URL of the internal endpoint
             required: true
             default: http://localhost:5001

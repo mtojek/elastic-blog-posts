@@ -2,7 +2,7 @@ title: "Application logs"
 type: logs
 streams:
   - input: logfile
-    title: IPFS node application logs
+    title: Standard logs
     description: Collect IPFS node application logs
     vars:
       - name: paths
