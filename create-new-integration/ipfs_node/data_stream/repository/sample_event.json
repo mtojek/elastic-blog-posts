@@ -1,7 +1,7 @@
 {
-    "@timestamp": "2021-09-28T12:20:41.353Z",
+    "@timestamp": "2021-09-28T12:34:22.104Z",
     "agent": {
-        "ephemeral_id": "98fd3062-affc-4d1a-bb81-3f25c03d12c4",
+        "ephemeral_id": "e8f271a2-94b3-4603-814c-c325b769f722",
         "hostname": "docker-fleet-agent",
         "id": "61f74704-8f2c-47a9-853a-c4407b71f3cc",
         "name": "docker-fleet-agent",
@@ -24,8 +24,8 @@
     "event": {
         "agent_id_status": "verified",
         "dataset": "ipfs_node.repository",
-        "duration": 6170200,
-        "ingested": "2021-09-28T12:20:44Z",
+        "duration": 5698900,
+        "ingested": "2021-09-28T12:34:25Z",
         "module": "http"
     },
     "host": {
@@ -54,7 +54,7 @@
         "repository": {
             "NumObjects": 22,
             "RepoPath": "/data/ipfs",
-            "RepoSize": 118321,
+            "RepoSize": 118313,
             "StorageMax": 10000000000,
             "Version": "fs-repo@11"
         }

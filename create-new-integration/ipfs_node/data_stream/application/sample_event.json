@@ -1,17 +1,17 @@
 {
-    "@timestamp": "2021-09-28T12:35:10.859Z",
+    "@timestamp": "2021-09-28T12:33:32.651Z",
     "agent": {
-        "ephemeral_id": "3828d707-7ef6-4af9-9b84-28cdbf8f22cf",
+        "ephemeral_id": "ed140b5f-c62a-416f-a23d-5ff2e1a4274d",
         "hostname": "docker-fleet-agent",
         "id": "61f74704-8f2c-47a9-853a-c4407b71f3cc",
         "name": "docker-fleet-agent",
-        "type": "metricbeat",
+        "type": "filebeat",
         "version": "7.15.0"
     },
     "data_stream": {
-        "dataset": "ipfs_node.traffic",
+        "dataset": "ipfs_node.application",
         "namespace": "ep",
-        "type": "metrics"
+        "type": "logs"
     },
     "ecs": {
         "version": "1.11.0"
@@ -23,10 +23,9 @@
     },
     "event": {
         "agent_id_status": "verified",
-        "dataset": "ipfs_node.traffic",
-        "duration": 3218100,
-        "ingested": "2021-09-28T12:35:14Z",
-        "module": "http"
+        "dataset": "ipfs_node.application",
+        "ingested": "2021-09-28T12:33:36Z",
+        "timezone": "+00:00"
     },
     "host": {
         "architecture": "x86_64",
@@ -50,20 +49,14 @@
             "version": "7 (Core)"
         }
     },
-    "http": {
-        "traffic": {
-            "RateIn": 6143.101688596616,
-            "RateOut": 2978.29294020491,
-            "TotalIn": 160014,
-            "TotalOut": 55738
-        }
+    "input": {
+        "type": "log"
     },
-    "metricset": {
-        "name": "json",
-        "period": 10000
+    "log": {
+        "file": {
+            "path": "/tmp/service_logs/ipfs-node-0.log"
+        },
+        "offset": 0
     },
-    "service": {
-        "address": "http://elastic-package-service_ipfs_node_1:5001/api/v0/stats/bw",
-        "type": "http"
-    }
+    "message": "Changing user to ipfs"
 }
