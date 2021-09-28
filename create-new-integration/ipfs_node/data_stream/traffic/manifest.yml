@@ -1,9 +1,9 @@
 title: "Traffic"
 type: metrics
 streams:
-  - input: sample/metrics
-    title: Sample metrics
-    description: Collect sample metrics
+  - input: httpjson
+    title: Traffic metrics
+    description: Collect bandwidth metrics from IPFS node
     vars:
       - name: period
         type: text

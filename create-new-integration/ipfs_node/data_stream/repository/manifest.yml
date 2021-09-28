@@ -1,9 +1,9 @@
 title: "Repository"
 type: metrics
 streams:
-  - input: sample/metrics
-    title: Sample metrics
-    description: Collect sample metrics
+  - input: httpjson
+    title: Repository metrics
+    description: Collect repository metrics from IPFS node
     vars:
       - name: period
         type: text

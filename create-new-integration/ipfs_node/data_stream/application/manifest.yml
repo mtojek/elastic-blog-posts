@@ -2,12 +2,12 @@ title: "Application logs"
 type: logs
 streams:
   - input: logfile
-    title: Sample logs
-    description: Collect sample logs
+    title: IPFS node application logs
+    description: Collect IPFS node application logs
     vars:
       - name: paths
         type: text
         title: Paths
         multi: true
         default:
-          - /var/log/*.log
+          - /var/log/ipfs-node-*.log
