@@ -1,7 +1,7 @@
 title: "Traffic"
 type: metrics
 streams:
-  - input: httpjson
+  - input: http/metrics
     title: Traffic metrics
     description: Collect bandwidth metrics from IPFS node
     vars:

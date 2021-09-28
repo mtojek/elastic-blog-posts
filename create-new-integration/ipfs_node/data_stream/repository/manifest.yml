@@ -1,7 +1,7 @@
 title: "Repository"
 type: metrics
 streams:
-  - input: httpjson
+  - input: http/metrics
     title: Repository metrics
     description: Collect repository metrics from IPFS node
     vars:

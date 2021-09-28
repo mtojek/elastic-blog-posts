@@ -29,7 +29,7 @@ policy_templates:
       - type: logfile
         title: Collect application logs
         description: Collecting application logs from IPFS node
-      - type: httpjson
+      - type: http/metrics
         title: Collect application metrics
         description: Collecting repository and traffic metrics from IPFS node
         vars:

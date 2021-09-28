@@ -1,6 +1,7 @@
-metricsets: ["sample_metricset"]
+metricsets: ["json"]
 hosts:
 {{#each hosts}}
-  - {{this}}
+  - {{this}}/api/v0/repo/stat
 {{/each}}
 period: {{period}}
+method: "POST"
