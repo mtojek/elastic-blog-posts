@@ -13,3 +13,6 @@
 - name: http.repository.Version
   type: keyword
   description: Storage version
+- name: service.address
+  type: keyword
+  description: Service address

@@ -1,6 +1,6 @@
 - external: ecs
   name: ecs.version
 - external: ecs
-  name: service.type
+  name: log.file.path
 - external: ecs
-  name: error.message
+  name: message
