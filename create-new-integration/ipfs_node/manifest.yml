@@ -22,12 +22,22 @@ icons:
     size: 32x32
     type: image/svg+xml
 policy_templates:
-  - name: sample
-    title: Sample logs
-    description: Collect sample logs
+  - name: application
+    title: IPFS node logs and metrics
+    description: Collect IPFS node logs and metrics
     inputs:
       - type: logfile
-        title: Collect sample logs from instances
-        description: Collecting sample logs
+        title: Collect application logs
+        description: Collecting application logs from IPFS node
+      - type: httpjson
+        title: Collect application metrics
+        description: Collecting repository and traffic metrics from IPFS node
+        vars:
+          - name: url
+            type: text
+            title: URL
+            description: Base URL of the internal endpoint
+            required: true
+            default: http://localhost:5001
 owner:
   github: mtojek
