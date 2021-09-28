@@ -1,0 +1,12 @@
+- name: http.traffic.RateIn
+  type: scaled_long
+  description: In network rate
+- name: http.traffic.RateOut
+  type: scaled_long
+  description: On network rate
+- name: http.traffic.TotalIn
+  type: long
+  description: Total in traffic
+- name: http.traffic.TotalOut
+  type: long
+  description: Total out traffic
